@@ -4,7 +4,7 @@ var conn = require('./config/connect');
 app = express();
 const userRouter = require('./user/user.router');
 
-app.use(express.json())
+app.use(express.json());
 
 app.use("/Backend/user", userRouter);
 conn.connect(function(err){
